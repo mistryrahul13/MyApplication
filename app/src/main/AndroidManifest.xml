@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/newlg"
+        android:label="@string/newname"
+        android:roundIcon="@mipmap/newlg_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".menu.MenuActivity"
+            android:exported="true" >
+
+
+
+        </activity>
+        <activity
+            android:name=".colours.ColourActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".newfragment.EnterActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".switches.MySwitches"
+            android:exported="true" />
+        <activity
+            android:name=".fragmentnew.AnotherActivity"
+            android:exported="true" />
+        <activity
+            android:name=".dashboard.FragActivity"
+            android:exported="true" />
+        <activity
+            android:name=".useractivity.SplashScrActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".useractivity.ForgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".useractivity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".useractivity.LoginActivity"
+            android:exported="true" >
+
+        </activity>
+<!--        <activity -->
+<!--         android:name=".loginactivity.RegisterPage" -->
+<!--         android:exported="false" /> -->
+<!--        <activity -->
+<!--         android:name=".loginactivity.LoginPage" -->
+<!--         android:exported="false" /> -->
+        <activity
+            android:name=".viewBinding.CollectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewBinding.ViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".object_activity.SecondOb"
+            android:exported="false" />
+        <activity
+            android:name=".object_activity.FirstOb"
+            android:exported="true" />
+        <activity
+            android:name=".activity_switch_explicit.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_switch_explicit.FirstActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

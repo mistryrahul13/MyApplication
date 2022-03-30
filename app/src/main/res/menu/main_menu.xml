@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu"
+        android:title="Main Menu"
+        android:icon="@drawable/splashimg"
+        app:showAsAction="always">
+
+        <menu>
+            <item android:title="SignUp"
+                android:id="@+id/item1" />
+
+            <item android:title="Gallery"
+                android:id="@+id/item2" />
+
+            <item android:title="Setting"
+                android:id="@+id/item3" />
+
+            <item android:title="Logout"
+                android:id="@+id/item4" />
+        </menu>
+    </item>
+</menu>

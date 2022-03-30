@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/signupp"
+    tools:context=".useractivity.RegisterActivity">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/signn" />
+
+
+    <EditText
+        android:id="@+id/FN"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/LN"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <EditText
+        android:id="@+id/LN"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Email"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <EditText
+        android:id="@+id/Pswrd"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Email"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Password"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <EditText
+        android:id="@+id/Rptpswrd"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Pswrd"
+        android:layout_marginBottom="50dp"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Repeat Password"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rptpswrd"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttondesign"
+        android:text="Sign up ➡" />
+
+    <TextView
+        android:id="@+id/tvaha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Rptpswrd"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:text="    Already have a account?"
+        android:textColor="#6C757D"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@id/tvaha"
+        android:text="Sign in"
+        android:textSize="18dp" />
+
+
+
+</RelativeLayout>

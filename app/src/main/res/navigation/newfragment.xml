@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newfragment"
+    app:startDestination="@id/baseFragment">
+
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.example.myapplication.newfragment.BaseFragment"
+        android:label="fragment_base"
+        tools:layout="@layout/fragment_base" >
+        <action
+            android:id="@+id/action_baseFragment_to_upperFragment"
+            app:destination="@id/upperFragment" />
+        <action
+            android:id="@+id/action_baseFragment_to_upperFragment2"
+            app:destination="@id/upperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upperFragment"
+        android:name="com.example.myapplication.newfragment.UpperFragment"
+        android:label="fragment_upper"
+        tools:layout="@layout/fragment_upper" >
+        <action
+            android:id="@+id/action_upperFragment_to_middleFragment"
+            app:destination="@id/middleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/middleFragment"
+        android:name="com.example.myapplication.newfragment.MiddleFragment"
+        android:label="fragment_middle"
+        tools:layout="@layout/fragment_middle" >
+        <action
+            android:id="@+id/action_middleFragment_to_topFragment"
+            app:destination="@id/topFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topFragment"
+        android:name="com.example.myapplication.newfragment.TopFragment"
+        android:label="fragment_top"
+        tools:layout="@layout/fragment_top" >
+        <action
+            android:id="@+id/action_topFragment_to_terraceFragment"
+            app:destination="@id/terraceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/terraceFragment"
+        android:name="com.example.myapplication.newfragment.TerraceFragment"
+        android:label="fragment_terrace"
+        tools:layout="@layout/fragment_terrace" >
+        <action
+            android:id="@+id/action_terraceFragment_to_baseFragment"
+            app:destination="@id/baseFragment" />
+    </fragment>
+</navigation>
